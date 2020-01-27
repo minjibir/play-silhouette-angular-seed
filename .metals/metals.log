@@ -140,3 +140,36 @@ WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play
 WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala' because it doesn't belong to a build target.
 WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala
 INFO  shutting down Metals
+INFO  time: initialize in 0.44s
+WARN  resetting database: /home/jabyte/Playground/Play/play-silhouette-angular-seed/.metals/metals.h2.db
+INFO  running '/usr/lib/jvm/java-8-openjdk/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals3189818664760388738/sbt-launch.jar metalsEnable bloopInstall'
+INFO  [info] Loading settings for project global-plugins from idea.sbt,plugins.sbt,metals.sbt ...
+INFO  [info] Loading global plugins from /home/jabyte/.sbt/1.0/plugins
+INFO  [info] Loading settings for project play-silhouette-angular-seed-build from plugins.sbt,metals.sbt ...
+INFO  [info] Loading project definition from /home/jabyte/Playground/Play/play-silhouette-angular-seed/project
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [success] Total time: 4 s, completed Jan 28, 2020 12:13:59 AM
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to default-stack-template (in build file:/home/jabyte/Playground/Play/play-silhouette-angular-seed/)
+INFO  [info] Set current project to default-stack-template (in build file:/home/jabyte/Playground/Play/play-silhouette-angular-seed/)
+INFO  [info] semanticdb-scalac is enabled
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [success] Generated .bloop/root.json
+INFO  [success] Generated .bloop/root-test.json
+INFO  [success] Total time: 4 s, completed Jan 28, 2020 12:14:12 AM
+INFO  time: ran 'sbt bloopInstall' in 35s
+INFO  build tool exit: 0
+INFO  running installed 'bloop bsp --protocol local --socket /tmp/bsp241997616369843464/-1lk6hvdkhoajj.socket'
+INFO  The server is listening for incoming connections at local:///tmp/bsp241997616369843464/-1lk6hvdkhoajj.socket...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/jabyte/.cache/metals/bsp.trace.json
+INFO  Accepted incoming BSP client connection at local:///tmp/bsp241997616369843464/-1lk6hvdkhoajj.socket
+INFO  request received: build/initialize
+INFO  time: connected to build server in 2.04s
+INFO  BSP initialization handshake complete.
+INFO  time: imported build in 0.21s
+WARN  Unable to run doctor. To fix this problem enable -Dmetals.http=true
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 6.25s
+WARN  no build target: 

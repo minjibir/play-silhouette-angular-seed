@@ -1,7 +1,6 @@
 package controllers
 
 import javax.inject.Inject
-
 import com.mohiva.play.silhouette.api._
 import com.mohiva.play.silhouette.api.exceptions.ProviderException
 import com.mohiva.play.silhouette.api.repositories.AuthInfoRepository
@@ -13,7 +12,7 @@ import play.api.libs.json.Json
 import play.api.mvc._
 import utils.auth.DefaultEnv
 
-import scala.concurrent.Future
+import scala.concurrent.{ ExecutionContext, Future }
 import scala.concurrent.duration._
 import scala.language.postfixOps
 
@@ -26,6 +25,8 @@ import scala.language.postfixOps
  * @param socialProviderRegistry The social provider registry.
  */
 class SocialAuthController @Inject() (
+  implicit
+  ec: ExecutionContext,
   cc: ControllerComponents,
   silhouette: Silhouette[DefaultEnv],
   userService: UserService,
