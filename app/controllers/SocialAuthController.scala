@@ -7,9 +7,8 @@ import com.mohiva.play.silhouette.api.exceptions.ProviderException
 import com.mohiva.play.silhouette.api.repositories.AuthInfoRepository
 import com.mohiva.play.silhouette.impl.providers._
 import models.services.UserService
-import play.api.cache.CacheApi
-import play.api.i18n.{ I18nSupport, Messages, MessagesApi }
-import play.api.libs.concurrent.Execution.Implicits._
+import play.api.cache.SyncCacheApi
+import play.api.i18n.{ I18nSupport, Messages }
 import play.api.libs.json.Json
 import play.api.mvc._
 import utils.auth.DefaultEnv
@@ -21,20 +20,19 @@ import scala.language.postfixOps
 /**
  * The social auth controller.
  *
- * @param messagesApi The Play messages API.
- * @param silhouette The Silhouette stack.
- * @param userService The user service implementation.
- * @param authInfoRepository The auth info service implementation.
+ * @param silhouette             The Silhouette stack.
+ * @param userService            The user service implementation.
+ * @param authInfoRepository     The auth info service implementation.
  * @param socialProviderRegistry The social provider registry.
  */
 class SocialAuthController @Inject() (
-  val messagesApi: MessagesApi,
+  cc: ControllerComponents,
   silhouette: Silhouette[DefaultEnv],
   userService: UserService,
   authInfoRepository: AuthInfoRepository,
   socialProviderRegistry: SocialProviderRegistry,
-  cache: CacheApi)
-  extends Controller with I18nSupport with Logger {
+  cache: SyncCacheApi)
+  extends AbstractController(cc) with I18nSupport with Logger {
 
   /**
    * Authenticates a user against a social provider.
@@ -42,7 +40,7 @@ class SocialAuthController @Inject() (
    * @param provider The ID of the provider to authenticate against.
    * @return The result to display.
    */
-  def authenticate(provider: String) = Action.async { r =>
+  def authenticate(provider: String): Action[AnyContent] = Action.async { r =>
     cacheAuthTokenForOauth1(r) { implicit request =>
       (socialProviderRegistry.get[SocialProvider](provider) match {
         case Some(p: SocialProvider with CommonSocialProfileBuilder) =>
@@ -75,19 +73,23 @@ class SocialAuthController @Inject() (
    * request. Not nice, but it works as a temporary workaround until the bug is fixed.
    *
    * @param request The current request.
-   * @param f The action to execute.
+   * @param f       The action to execute.
    * @return A result.
    * @see https://github.com/sahat/satellizer/issues/287
    */
   private def cacheAuthTokenForOauth1(request: Request[AnyContent])(f: Request[AnyContent] => Future[Result]): Future[Result] = {
     request.getQueryString("oauth_token") -> request.getQueryString("oauth_verifier") match {
-      case (Some(token), Some(verifier)) => cache.get[Result](token + "-" + verifier) match {
-        case Some(result) => Future.successful(result)
-        case None => f(request).map { result =>
-          cache.set(token + "-" + verifier, result, 1 minute)
-          result
+      case (Some(token), Some(verifier)) =>
+        cache.get[Result](token + "-" + verifier) match {
+          case Some(result) =>
+            Future.successful(result)
+          case None =>
+            f(request).map {
+              result =>
+                cache.set(token + "-" + verifier, result, 1 minute)
+                result
+            }
         }
-      }
       case _ => f(request)
     }
   }

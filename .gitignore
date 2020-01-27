@@ -20,4 +20,4 @@ dist
 .bundle
 
 #OS X
-.DS_Store
+.DS_Store.metals/

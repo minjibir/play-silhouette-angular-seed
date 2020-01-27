@@ -1,0 +1,142 @@
+INFO  started: Metals version 0.8.0 in workspace 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed'
+INFO  time: initialize in 0.45s
+WARN  Unsupported sbt version 0.13.11
+WARN  Unsupported sbt version 0.13.11
+WARN  Unsupported sbt version 0.13.11
+WARN  Unsupported sbt version 0.13.11
+WARN  Unsupported sbt version 0.13.11
+WARN  Unsupported sbt version 0.13.11
+INFO  skipping build import with status 'Requested'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  running 'C:\Program Files\Java\jdk1.8.0_161\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\JMUNJI~1\AppData\Local\Temp\metals3653809386866340428\sbt-launch.jar set bloopExportJarClassifiers in Global := Some(Set("sources")) bloopInstall'
+INFO  [info] Loading settings for project global-plugins-build from plugins.sbt ...
+INFO  [info] Loading global plugins from C:\Users\jmunjibir\.sbt\1.0\plugins\project
+INFO  [info] Loading settings for project global-plugins from idea.sbt,plugins.sbt ...
+INFO  [info] Loading global plugins from C:\Users\jmunjibir\.sbt\1.0\plugins
+INFO  [info] Loading settings for project play-silhouette-angular-seed-build from metals.sbt,plugins.sbt ...
+INFO  [info] Loading project definition from C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\project
+INFO  [warn] 
+INFO  [warn] 	Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.
+INFO  [warn] 		com.heroku:sbt-heroku:0.4.3 (sbtVersion=1.0, scalaVersion=2.12)
+INFO  [warn] 
+INFO  [warn] 	Note: Unresolved dependencies path:
+INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.heroku:sbt-heroku;sbtVersion=1.0;scalaVersion=2.12:0.4.3
+INFO  [error]   Not found
+INFO  [error]   Not found
+INFO  [error]   not found: https://repo1.maven.org/maven2/com/heroku/sbt-heroku_2.12_1.0/0.4.3/sbt-heroku-0.4.3.pom
+INFO  [error]   not found: C:\Users\jmunjibir\.ivy2\local\com.heroku\sbt-heroku\scala_2.12\sbt_1.0\0.4.3\ivys\ivy.xml
+INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.12/sbt_1.0/0.4.3/ivys/ivy.xml
+INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.heroku/sbt-heroku/scala_2.12/sbt_1.0/0.4.3/ivys/ivy.xml
+INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
+INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
+INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:214)
+INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:52)
+INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:102)
+INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:69)
+INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:115)
+INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:115)
+INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:96)
+INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:150)
+INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:129)
+INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:2946)
+INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:67)
+INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:281)
+INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)
+INFO  [error] 	at sbt.Execute.work(Execute.scala:290)
+INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:281)
+INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+INFO  [error] 	at java.lang.Thread.run(Thread.java:748)
+INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.heroku:sbt-heroku;sbtVersion=1.0;scalaVersion=2.12:0.4.3
+INFO  [error]   Not found
+INFO  [error]   Not found
+INFO  [error]   not found: https://repo1.maven.org/maven2/com/heroku/sbt-heroku_2.12_1.0/0.4.3/sbt-heroku-0.4.3.pom
+INFO  [error]   not found: C:\Users\jmunjibir\.ivy2\local\com.heroku\sbt-heroku\scala_2.12\sbt_1.0\0.4.3\ivys\ivy.xml
+INFO  [error]   not found: https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.12/sbt_1.0/0.4.3/ivys/ivy.xml
+INFO  [error]   not found: https://repo.typesafe.com/typesafe/ivy-releases/com.heroku/sbt-heroku/scala_2.12/sbt_1.0/0.4.3/ivys/ivy.xml
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? 
+INFO  build tool exit: 1
+INFO  time: ran 'sbt bloopInstall' in 21s
+ERROR sbt command failed: C:\Program Files\Java\jdk1.8.0_161\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\JMUNJI~1\AppData\Local\Temp\metals3653809386866340428\sbt-launch.jar set bloopExportJarClassifiers in Global := Some(Set("sources")) bloopInstall
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\controllers\SignInController.scala
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignIn.scala
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\SignInForm.scala' because it doesn't belong to a build target.
+Jan 27, 2020 12:47:01 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jan 27, 2020 12:47:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:64)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:141)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:138)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:229)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:228)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:58)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:298)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:479)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:478)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:44)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:272)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1929)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$enterSyms$1(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1924)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:1986)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1879)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5637)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:5780)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3353)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5346)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5639)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5716)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:114)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:453)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1333)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:665)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:814)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1225)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:367)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:51)
+
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file 'C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala' because it doesn't belong to a build target.
+WARN  no build target for: C:\Users\jmunjibir\Decoys\play-silhouette-angular-seed\app\forms\LoginModel.scala
+INFO  shutting down Metals
